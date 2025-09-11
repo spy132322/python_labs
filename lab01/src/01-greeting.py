@@ -14,7 +14,7 @@ def main():
         human = Human(input("Имя: "), int(input("Возраст: ")))
         print(f"Привет, {human.get_name()}! Через год тебе будет {human.get_age() + 1}.")
     except Exception as e:
-        print(f"Ничесе ты умный: {e}")
+        print(f"Код ошибки: {e}")
         
 if __name__ =="__main__":
     main()
