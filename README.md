@@ -7,8 +7,5 @@
 
 ![Ayanami ray](/_ayanami_.gif)
 
-<<<<<<< HEAD
 **Тут нету стеги**
-=======
-**Тут нету стеги**
->>>>>>> refs/remotes/origin/main
+
