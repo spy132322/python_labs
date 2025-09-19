@@ -30,5 +30,5 @@ def format_record(rec: tuple[str, str, float]) -> str | type[ValueError] | type[
         pass
     try:
         n1,n2 = rec[0].strip().split()
-        return f"{n1[0].upper() + n1[1:]} {n2[0].upper()}.{n2[0].upper()}., гр. {rec[1].upper()}, GPA {rec[2]:.2f}"
+        return f"{n1[0].upper() + n1[1:]} {n2[0].upper()}., гр. {rec[1].upper()}, GPA {rec[2]:.2f}"
     except Exception as e: print(e); return ValueError('Неверное ФИО')
