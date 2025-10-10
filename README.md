@@ -5,6 +5,8 @@
 
 2я Лаба [LAB02](/lab02/README.md)
 
+3я Лаба [LABA03](/lab03/README.md)
+
 ![Ayanami ray](/_ayanami_.gif)
 
 **Тут нету стеги**
