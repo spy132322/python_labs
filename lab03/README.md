@@ -1,5 +1,5 @@
 ## Лаба 03
-### Реализация либ
+### Реализация функций
 ```python
 def normalize(text: str , casefold: bool = True, yo2e: bool = False) -> str:
     """
