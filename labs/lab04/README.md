@@ -27,7 +27,7 @@ import sys
 from pathlib import Path
 from typing import Dict, Iterable, List, Sequence, Tuple
 
-from libs.text import normalize, tokenize, count_freq  # ожидается из ЛР3
+from libs.text import normalize, tokenize, count_freq  
 
 
 def _is_txt_file(path: str | Path) -> bool:
