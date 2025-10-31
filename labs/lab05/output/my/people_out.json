@@ -1,0 +1,27 @@
+[
+  {
+    "city": "Nizhny Novgorod",
+    "country": "Russia",
+    "population": "1259015"
+  },
+  {
+    "city": "Samara",
+    "country": "Russia",
+    "population": "1134730"
+  },
+  {
+    "city": "Rostov-on-Don",
+    "country": "Russia",
+    "population": "1115093"
+  },
+  {
+    "city": "Ufa",
+    "country": "Russia",
+    "population": "1091204"
+  },
+  {
+    "city": "Perm",
+    "country": "Russia",
+    "population": "1048000"
+  }
+]
