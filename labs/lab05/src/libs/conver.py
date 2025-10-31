@@ -1,8 +1,7 @@
-# src/lab05/json_csv.py
 from pathlib import Path
 import json
 import csv
-from typing import List, Dict, Any
+from typing import List, Dict
 
 
 def _ensure_relative(path: Path) -> None:
@@ -118,10 +117,6 @@ def csv_to_json(csv_path: str | Path, json_path: str | Path) -> None:
 
     with jp.open("w", encoding="utf-8") as f:
         json.dump(rows, f, ensure_ascii=False, indent=2)
-
-from pathlib import Path
-import csv
-from typing import List
 
 def csv_to_xlsx(csv_path: str | Path, xlsx_path: str | Path) -> None:
     """
