@@ -140,11 +140,11 @@ if __name__ == "__main__":
 ```
 #### Скриншотики
 
-[хелпа](/labs/lab06/images/01_1.png)
+![хелпа](/labs/lab06/images/01_1.png)
 
-[тест_ф](/labs/lab06/images/01_02.png)
+![тест_ф](/labs/lab06/images/01_02.png)
 
-[тест_ф2](/labs/lab06/images/01_03.png)
+![тест_ф2](/labs/lab06/images/01_03.png)
 
 #### Конвертер
 [супер удобная тулза](/labs/lab06/src/cli_converter.py)
@@ -232,7 +232,7 @@ if __name__ == "__main__":
 ```
 #### Хелпулина
 
-[хелп](/labs/lab06/images/02_01.png)
+![хелп](/labs/lab06/images/02_01.png)
 
 ### Тестики функций для 2й файлика
 
