@@ -21,7 +21,6 @@ def read_json(path: Path):
 def test_csv_to_json_roundtrip(tmp_path: Path):
     src = tmp_path / "people.csv"
     dst = tmp_path / "people.json"
-    # запишем CSV вручную
     header = ["name", "age"]
     rows = [["Alice", "22"], ["Bob", "25"]]
     with src.open("w", encoding="utf-8", newline="") as f:
@@ -192,7 +191,7 @@ def test_json_to_csv_first_element_empty_dict(tmp_path: Path):
     """Тест для случая, когда первый элемент списка - пустой словарь"""
     src = tmp_path / "empty_first.json"
     dst = tmp_path / "out.csv"
-    data = [{}]  # Пустой первый элемент
+    data = [{}] 
     write_json(src, data)
     
     with pytest.raises(ValueError, match="Пустой JSON или неподдерживаемая структура"):
