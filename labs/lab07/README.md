@@ -46,3 +46,7 @@ addopts = "--strict-markers --maxfail=1"
 ### cover me
 
 ![cov](/labs/lab07/images/p4.png)
+
+
+[tst_json_csv](/labs/lab07/tests/test_json_csv.py)
+[tst_text](/labs/lab07/tests/test_text.py)
