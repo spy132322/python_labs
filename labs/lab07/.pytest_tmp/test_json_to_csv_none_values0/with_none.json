@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Alice",
+    "age": null
+  },
+  {
+    "name": "Bob",
+    "age": 25
+  }
+]

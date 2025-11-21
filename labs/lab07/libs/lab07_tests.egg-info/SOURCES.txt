@@ -1,0 +1,8 @@
+pyproject.toml
+libs/lab07_tests.egg-info/PKG-INFO
+libs/lab07_tests.egg-info/SOURCES.txt
+libs/lab07_tests.egg-info/dependency_links.txt
+libs/lab07_tests.egg-info/requires.txt
+libs/lab07_tests.egg-info/top_level.txt
+tests/test_json_csv.py
+tests/tests_text.py
