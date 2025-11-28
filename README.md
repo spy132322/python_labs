@@ -14,3 +14,5 @@
 6я лаба [LAB06](/labs/lab06/README.md)
 
 7я лаба [LAB07](/labs/lab07/README.md)
+
+8я лаба [LAB08](/labs/lab08/README.md)

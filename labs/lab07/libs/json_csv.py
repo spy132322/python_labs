@@ -31,8 +31,8 @@ def json_to_csv(json_path: str | Path, csv_path: str | Path) -> None:
     jp = Path(json_path)
     cp = Path(csv_path)
 
-#    _ensure_relative(jp)
-#    _ensure_relative(cp)
+    #    _ensure_relative(jp)
+    #    _ensure_relative(cp)
 
     if jp.suffix.lower() != ".json":
         raise ValueError("Неверный тип входного файла: ожидался .json")
@@ -95,8 +95,8 @@ def csv_to_json(csv_path: str | Path, json_path: str | Path) -> None:
     cp = Path(csv_path)
     jp = Path(json_path)
 
-#    _ensure_relative(cp)
-#    _ensure_relative(jp)
+    #    _ensure_relative(cp)
+    #    _ensure_relative(jp)
 
     if cp.suffix.lower() != ".csv":
         raise ValueError("Неверный тип входного файла: ожидался .csv")
@@ -106,7 +106,7 @@ def csv_to_json(csv_path: str | Path, json_path: str | Path) -> None:
     with cp.open("r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         fieldnames = reader.fieldnames
-      
+
         if fieldnames is None:
             raise ValueError("CSV без заголовка или пустой")
 
@@ -114,14 +114,20 @@ def csv_to_json(csv_path: str | Path, json_path: str | Path) -> None:
             if not fn or not fn.strip():
                 raise ValueError("Неверный заголовок CSV: пустое имя")
             if not fn.isidentifier():
-                raise ValueError("Неверный заголовок CSV: имена колонок должны быть идентификаторами")
+                raise ValueError(
+                    "Неверный заголовок CSV: имена колонок должны быть идентификаторами"
+                )
         normalized = ["" if fn is None else str(fn) for fn in fieldnames]
 
         if any(fn.strip() == "" for fn in normalized):
-            raise ValueError("Неверный заголовок CSV: присутствуют пустые имена колонок")
+            raise ValueError(
+                "Неверный заголовок CSV: присутствуют пустые имена колонок"
+            )
 
         if len(set(normalized)) != len(normalized):
-            raise ValueError("Неверный заголовок CSV: найдены дублирующиеся имена колонок")
+            raise ValueError(
+                "Неверный заголовок CSV: найдены дублирующиеся имена колонок"
+            )
 
         rows: List[Dict[str, str]] = []
         for raw in reader:
@@ -158,8 +164,8 @@ def csv_to_xlsx(csv_path: str | Path, xlsx_path: str | Path) -> None:
     cp = Path(csv_path)
     xp = Path(xlsx_path)
 
-#    _ensure_relative(cp)
-#    _ensure_relative(xp)
+    #    _ensure_relative(cp)
+    #    _ensure_relative(xp)
 
     if cp.suffix.lower() != ".csv":
         raise ValueError("Неверный тип входного файла: ожидался .csv")
