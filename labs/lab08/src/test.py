@@ -1,5 +1,5 @@
 from serilize import *
-from models import Student
+from labs.lab09.src.models import Student
 print("Тестим функцию погребания в json с list[Student]")
 students = [
     Student(fio="Как Его Зовут1", birthdate="2025-11-15", gpa=2, group="Придумайте ченить для группы1"),

@@ -1,6 +1,6 @@
 import json
-from models import Student
-from checks import verify_type
+from labs.lab09.src.models import Student
+from labs.lab09.src.checks import verify_type
 
 def students_to_json(students, path):
     data = [s.to_dict() for s in students]
