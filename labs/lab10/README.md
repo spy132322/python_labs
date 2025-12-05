@@ -3,8 +3,6 @@
 #### Таска ААА
 
 ```python
-"""Stack и Queue — компактные, эффективные реализации по ТЗ."""
-
 from collections import deque
 from typing import Any, Optional
 
@@ -111,15 +109,6 @@ print(f'Количество элементов в очереди : {len(q)}')
 #### Таска Б
 
 ```python
-"""Односвязный список (SinglyLinkedList) и Node.
-
-Оптимизации и особенности:
-- Node использует __slots__ для уменьшения памяти.
-- SinglyLinkedList хранит head и tail для O(1) append.
-- Поддерживается append, prepend, insert, remove (по значению),
-  remove_at (по индексу), итерация, len и удобный вывод.
-"""
-
 from typing import Any, Iterator, Optional
 
 
